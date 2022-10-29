@@ -9,11 +9,11 @@ function App() {
   return (
     <div className="App">
       <Card/>
-      hello
       <Home/>
       <Footer/>
-      <SignIn/>
-      <SignUp/>
+     <SignIn/> 
+      <SignUp/>  
+      {/* <h1>heloo </h1> */}
     </div>
   );
 }

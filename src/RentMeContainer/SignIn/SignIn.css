@@ -1,0 +1,19 @@
+.outerContainer{
+    background-color: rgb(173, 177, 181);
+    height:46.5rem;
+    width:96rem;
+    position: relative;
+}
+.innerContainer{
+
+    /* border:solid 0.1rem black; */
+     
+}
+.innerestContainer{
+    position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); 
+border:solid 0.1rem black;
+text-align: center;
+}

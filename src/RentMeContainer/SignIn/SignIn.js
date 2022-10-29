@@ -1,10 +1,17 @@
-<<<<<<< HEAD
 import React from "react";
-
+ import './SignIn.css'
 const SignIn = () =>{
     return (
-        <div>
-            <h1>complete here the html part of signin page</h1>
+        <div className="outerContainer">
+            <div className="innerContainer">
+            <div className="innerestContainer">
+            <h1>LOGIN</h1>
+            <input type="email" placeholder="Enter your username email" /><br/>
+            <input type="password" placeholder="Password" />
+            <p>Forget your password ?</p>
+            <button>login</button>
+            </div>
+            </div>
         </div>
     )
 }
@@ -12,18 +19,3 @@ export default SignIn;
 
 
 
-=======
-import React from "react";
-
-const SignIn = () =>{
-    return (
-        <div>
-            <h1>complete here the html part of signin page</h1>
-        </div>
-    )
-}
-export default SignIn;
-
-
-
->>>>>>> 862feb609dc3384838197220e020ddd42306a74e
