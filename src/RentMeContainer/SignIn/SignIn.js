@@ -1,9 +1,12 @@
 import React from "react";
- import './SignIn.css'
+ import './SignIn.css';
+
 const SignIn = () =>{
     return (
-        <div className="outerContainer">
-            <div className="innerContainer">
+        <div className="outerContainer" > 
+        {/* <img src='bg.jpg' alt="bg-img" ></img> */}
+        <h1>LOGIN</h1>
+            {/* <div className="innerContainer">
             <div className="innerestContainer">
             <h1>LOGIN</h1>
             <input type="email" placeholder="Enter your username email" /><br/>
@@ -11,7 +14,7 @@ const SignIn = () =>{
             <p>Forget your password ?</p>
             <button>login</button>
             </div>
-            </div>
+            </div> */}
         </div>
     )
 }
