@@ -2,9 +2,10 @@ import React from "react";
  import './SignIn.css';
 
 const SignIn = () =>{
+    
     return (
         <div className="outerContainer" > 
-        {/* <img src='bg.jpg' alt="bg-img" ></img> */}
+        <img src='bg.jpg' alt="bg-img" ></img>
         <h1>LOGIN</h1>
             {/* <div className="innerContainer">
             <div className="innerestContainer">

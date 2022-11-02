@@ -1,7 +1,11 @@
 .outerContainer{
-  position: relative;
-}
+    
+ position: relative;
 
+}
+H1{
+    margin:-60px;
+}
 .innerContainer{
     margin-top: 10rem;
     margin-left: 20rem;

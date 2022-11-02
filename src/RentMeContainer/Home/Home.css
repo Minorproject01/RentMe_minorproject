@@ -1,0 +1,83 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* background-color: gray; */
+  }
+  /* PARENT CONTAINER */
+  .main {
+    width: 95%;
+    max-width: 95%;
+    margin: 0 auto;
+    border: 2px solid red;
+  }
+  
+  img {
+    border: 2px solid yellow;
+    background-size: "cover";
+    /* height: 100vh; */
+    /* margin-top: -70px; */
+    background-repeat: no-repeat;
+  }
+  /* PARENT CONTAINER end */
+  
+  /* NAVBAR */
+  .nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem 1rem 1rem 1rem;
+  }
+  /* NAVBAR end */
+  
+  /* NAVBAR CONTENT START */
+  .components {
+    /* position: absolute; */
+    display: absolute;
+    justify-content: space-between;
+    /* border: 2px solid brown; */
+  }
+  nav > div ul {
+    display: flex;
+    /* position: absolute; */
+    /* border: 2px dotted red; */
+    list-style: none;
+    justify-content: right;
+    align-items: center;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1rem;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  label {
+    margin-left: 10%;
+  }
+  
+  #select {
+    height: 5%;
+    width: 10%;
+    border-radius: 0.8rem;
+  }
+  
+  #input {
+    height: 10%;
+    width: 25%;
+    border-radius: 0.8rem;
+  }
+  /* NAVBAR CONTENT END */
+  
+  /* MAIN HOME SCREEN */
+  .home-section {
+    border: 2px solid yellow;
+    /* background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2F736x%2F65%2Fed%2F60%2F65ed6036e937c31d5be7872fbe673ce1.jpg&imgrefurl=https%3A%2F%2Fin.pinterest.com%2Fpin%2F775533998322700250%2F&tbnid=SlqsVj9MwwcbRM&vet=12ahUKEwjg7MDSlor7AhVskdgFHTfzCKsQMygBegUIARDQAQ..i&docid=DE7qlSAz7t0pNM&w=626&h=417&q=shopping%20images%20for%20background%20from%20pinterest&hl=en&ved=2ahUKEwjg7MDSlor7AhVskdgFHTfzCKsQMygBegUIARDQAQ"); */
+    background-size: "cover";
+    height: 100vh;
+    /* margin-top: -70px; */
+    background-repeat: no-repeat;
+  }
