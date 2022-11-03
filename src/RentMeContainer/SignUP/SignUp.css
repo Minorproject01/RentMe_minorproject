@@ -1,11 +1,11 @@
-.Container {
+ .Container {
     width: 100vw;
     height: 100vh;
     background: linear-gradient(
         rgba(255, 255, 255, 0.5),
         rgba(255, 255, 255, 0.5)
       ),
-      /* url("/src/assets/images/background.png.png") */
+      url("/src/assets/Images/background.png.png")
         center;
     background-size: cover;
     display: flex;
@@ -16,7 +16,7 @@
       width: 40%;
       padding: 20px;
       background-color: white;
-      /* ${mobile({ width: "75%" })} */
+       /* ${mobile({ width: "75%" }) */
   }
   .Title{
       font-size: 24px;
@@ -43,4 +43,4 @@
       background-color: teal;
       color: white;
       cursor: pointer;  
-  }
+  } 

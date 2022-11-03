@@ -1,12 +1,24 @@
 .outerContainer{
     
- position: relative;
+ /* position: relative; */
+ background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("/src/assets/Images/bg.jpg")
+        center;
+        width: 100vw;
+        height: 100vh;
+        background-size:cover ;
+      display: flex;
+        align-items: center;
+        justify-content: center;
 
 }
-H1{
+/* H1{
     margin:-60px;
-}
-.innerContainer{
+} */
+/* .innerContainer{
     margin-top: 10rem;
     margin-left: 20rem;
     position: absolute;
@@ -15,9 +27,9 @@ H1{
     border:solid 0.1rem black;
     background-color:rgb(33, 139, 118);
 
-}
+} */
 
-.innerestContainer{
+/* .innerestContainer{
     background-color: bisque;
 position: absolute;
 top: 50%;
@@ -25,7 +37,7 @@ left: 50%;
 transform: translate(-50%, -50%); 
 border:solid 0.1rem black;
 text-align: center;
-}
+} */
 
 
 

@@ -8,11 +8,13 @@ import SignUp from './RentMeContainer/SignUP/SignUp';
 function App() {
   return (
     <div className="App">
-      <Card/>
-      <Home/>
-      <Footer/>
-     <SignIn/> 
+       <SignIn/> 
       <SignUp/>  
+          <Home/>
+      <Card/>
+    
+      <Footer/>
+
       {/* <h1>heloo </h1> */}
     </div>
   );

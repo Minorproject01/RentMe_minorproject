@@ -1,9 +1,39 @@
 
 import React from 'react'
 import './SignUp.css'
+import { useState } from 'react';
+// import { isEmailExist, signUp } from "../services/auth";
+import { isEmailExist,signUp } from '../../utilities/auth';
+// import { Link } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
+const initialValue = {
+    email: "",
+    password: "",
+  };
+function SignUp() 
+{
+  const [formData, setFormData] = useState(initialValue);
+    // let navigate = useNavigate();
+    function handleData() {
+      if (isEmailExist(formData.email)) {
+        alert("email already exist !");
+        return;
+      }
+      signUp(formData)
+    //   navigate(`/dashboard`);
+    }
+  
+    const inputChangeHandler = (e) => {
+      e.preventDefault();
+  
+      const { name, value } = e.target;
+      setFormData((pre) => {
+        return { ...pre, [name]: value };
+      });
+  
+    };
 
 
-function SignUp() {
     return (
         <div className='Container'>
             <div className='Wrapper'>
@@ -14,28 +44,28 @@ function SignUp() {
                         placeholder="first name"
                         name="firstName"
                         id="firstName"
-                        // onChange={inputChangeHandler}
+                        onChange={inputChangeHandler}
                     />
                     <input
                         type="text"
                         placeholder="last name"
                         name="lastName"
                         id="lastName"
-                        // onChange={inputChangeHandler}
+                        onChange={inputChangeHandler}
                     />
                     <input
                         text="text"
                         placeholder="username"
                         name="userame"
                         id="username"
-                        // onChange={inputChangeHandler}
+                        onChange={inputChangeHandler}
                     />
                     <input
                         type="email"
                         name="email"
                         id="email"
                         placeholder="email"
-                        // onChange={inputChangeHandler}
+                        onChange={inputChangeHandler}
                     />
                     <input
                         type="password"
@@ -43,7 +73,7 @@ function SignUp() {
                         id="password"
                         placeholder="Password"
                         autoComplete="false"
-                        // onChange={inputChangeHandler}
+                        onChange={inputChangeHandler}
                     />
                     <input
                         type="password"
@@ -51,13 +81,13 @@ function SignUp() {
                         id="confirmPassword"
                         placeholder="confirm password"
                         autoComplete="false"
-                        // onChange={inputChangeHandler}
+                        onChange={inputChangeHandler}
                     />
                     <div className='Agreement'>
                         By creating an account, I consent to the processing of my personal
                         data in accordance with the <b>PRIVACY POLICY</b>
                     </div>
-                    <button>CREATE</button>
+                    <button onClick={handleData}>CREATE</button>
                 </form>
 
             </div>
